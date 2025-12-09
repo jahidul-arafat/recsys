@@ -1,0 +1,40 @@
+To run everything (all algorithms, all datasets, all features), use:
+
+```bash
+cd recommender_project
+python run_all.py --all --yes
+```
+
+This single command runs:
+
+| Component | What it does |
+|-----------|--------------|
+| `--all` | Enables ALL features below |
+| Individual algorithms (01-08) | All 10 recommendation algorithms |
+| `--multi` | 3 datasets (MovieLens, Amazon-style, BookCrossing-style) |
+| `--real` | Downloads real MovieLens-100K dataset |
+| `--tune` | Hyperparameter optimization |
+| `--compare` | Master comparison across all algorithms |
+| `--dashboard` | Generates HTML dashboard |
+| `--yes` | Auto-confirms all prompts |
+
+**Estimated time:** 15-30 minutes depending on your hardware.
+
+**Alternative options:**
+
+```bash
+# Quick test (synthetic data only, ~5 min)
+python run_all.py --yes
+
+# Multi-dataset only (~10 min)
+python run_all.py --multi --yes
+
+# Skip tuning (faster, ~10 min)
+python run_all.py --all --skip-tune --yes
+```
+
+**Output locations:**
+- Visualizations: `visualizations/*.html`
+- Reports: `reports/*/`
+- Dashboard: `reports/dashboard.html`
+- Comparison: `reports/master_comparison/`
