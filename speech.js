@@ -538,19 +538,19 @@ Over 40,000 teams competed for three years. PhD researchers, machine learning ex
 
 On September 21, 2009, team "BellKor's Pragmatic Chaos" won with exactly 10.06% improvement. They earned one million dollars.
 
-Here's the fascinating revelation: their ALGORITHMIC innovations contributed only PART of the improvement. A massive portion came from meticulous HYPERPARAMETER TUNING!
+Here's the fascinating revelation: their ALGORITHMIC innovations contributed only PART of the improvement. A massive portion came from meticulous hyperparameter TUNING!
 
 The same Matrix Factorization algorithm with default settings might achieve 5% improvement. But with carefully tuned hyperparameters - the right number of factors, the perfect regularization, the optimal learning rate - it achieved over 10%.
 
 That 5% difference from tuning alone was worth hundreds of thousands of dollars.
 
-WHAT EXACTLY ARE HYPERPARAMETERS?
+WHAT EXACTLY ARE Hyperparameters ?
 
 When you train a machine learning model, there are two types of numbers that get set:
 
 PARAMETERS are learned FROM the data during training. In Matrix Factorization, the user factor vectors and item factor vectors are parameters. The algorithm discovers them automatically by minimizing prediction error.
 
-HYPERPARAMETERS are set BY YOU before training begins. They control HOW the learning happens. The NUMBER of factors, the AMOUNT of regularization, the LEARNING RATE - these are choices you make that dramatically affect results.
+Hyperparameters are set BY YOU before training begins. They control HOW the learning happens. The NUMBER of factors, the AMOUNT of regularization, the LEARNING RATE - these are choices you make that dramatically affect results.
 
 Think of baking bread. The amounts of flour, water, and yeast in the final dough are like parameters - determined by the recipe process. But the oven temperature? That's a hyperparameter you set before baking. Wrong temperature ruins the bread no matter how good your ingredients!
 
@@ -577,7 +577,7 @@ Let's make your algorithms great!`
             title: "Understanding Hyperparameters - The Complete Guide",
             text: `Let me explain hyperparameters thoroughly for each algorithm family. Understanding WHAT you're tuning is essential before understanding HOW to tune it.
 
-MATRIX FACTORIZATION HYPERPARAMETERS
+MATRIX FACTORIZATION Hyperparameters
 
 n_factors (also called k, latent_dim, or n_components): This controls how many latent dimensions the model uses. Think of it as how many hidden "aspects" of movies the model can learn.
 
@@ -615,7 +615,7 @@ Too many: Model starts memorizing (overfitting).
 
 We typically monitor validation loss and stop when it starts rising.
 
-COLLABORATIVE FILTERING HYPERPARAMETERS
+COLLABORATIVE FILTERING Hyperparameters
 
 k_neighbors: How many similar users or items to consider.
 
@@ -643,7 +643,7 @@ Low min_support: Uses unreliable similarities based on few overlapping ratings.
 
 High min_support: More reliable but fewer neighbors qualify.
 
-NEURAL CF HYPERPARAMETERS
+NEURAL CF Hyperparameters
 
 embedding_dim: Size of user and item embedding vectors.
 
